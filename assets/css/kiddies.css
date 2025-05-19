@@ -695,7 +695,7 @@ h1{
 }
 .upper{
     /* background-image: url(../images/image-2-down.jpeg);  */
-    background-image: url(/assets/images/repl.jpeg); 
+    background-image: url(../images/repl.jpeg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -722,7 +722,7 @@ h1{
     
 }
 .upper-p{
-    background-image: url(/assets/images/image-1-down.jpeg);
+    background-image: url(../images/image-1-down.jpeg);
     
     background-position: center;
     background-repeat: no-repeat;
@@ -875,7 +875,7 @@ h1{
 }
 
 .part-upper{
-    background-image: url(/assets/images/adventure.jpeg);
+    background-image: url(../images/adventure.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -894,7 +894,7 @@ h1{
 
 }
 .part-u{
-    background-image: url(/assets/images/english-class.jpeg);
+    background-image: url(../images/english-class.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -914,7 +914,7 @@ h1{
 
 }
 .part-up{
-    background-image: url(/assets/images/drawing.jpeg);
+    background-image: url(../images/drawing.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
