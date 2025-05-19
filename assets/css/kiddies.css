@@ -695,7 +695,7 @@ h1{
 }
 .upper{
     /* background-image: url(../images/image-2-down.jpeg);  */
-    background-image: url(../images/repl.jpeg); 
+    background-image: url(..\images\repl.jpeg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
