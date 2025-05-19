@@ -1,0 +1,43 @@
+.welcome-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.bounceIn{
+    animation-name: bounceIn;
+    color:blueviolet;
+    font-size: 50px;
+
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    font-size: 30px;
+    color: rgba(0, 128, 0, 0.67)
+}
+
+@keyframes bounceIn{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

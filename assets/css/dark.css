@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    
+}
+.old div{
+    background-color:black;
+    color: white;
+}
+.grid-three div{
+    background-color: green;
+}
+.grid-four div{
+    background: rgb(0, 0, 255,0.5);
+}
+.grid-2-one p:first-child{
+    color: white;
+}
+.grid-2-one p:nth-child(n+2){
+    color:white;
+}
+.about{
+    color:white;
+}
+.section-4 .popular{
+    color: white;
+}
+.fa-lightbulb{
+    color: yellow;
+}
+.explorer p, .parent p, .parent p:nth-child(n+3){
+    color: white;
+}
+

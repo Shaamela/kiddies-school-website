@@ -1,0 +1,71 @@
+body{
+    background: #f3f3f3;
+    box-sizing: border-box;
+
+}
+
+li{
+    list-style: none;
+    font-size: 28px;
+    padding: 15px;
+    color: black;
+    margin-left: 45px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.login{
+    color: black;
+    font-weight: 500;
+    margin-left: 95px;
+    padding: 5px 15px;
+    
+}
+.Sign{
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: gold;
+    padding: 5px 30px;
+    margin-left: 15px;
+}
+.brands{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 90px;
+    letter-spacing: 17px;
+}
+.first{
+    margin-top:80px;
+}
+.x .fa-x{
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 27px;
+}
+.x{
+    background-color:rgb(199, 48, 199);
+    width:70px;
+    height: 60px;
+}
+.fa-square-caret-down{
+    margin-left: 300px;
+    background-color:rgb(199, 48, 199);
+    color: white;
+}
+
+.fifth .fa-square-caret-down{
+    margin-left: 285px;
+}
+.fourth .fa-square-caret-down{
+    margin-left: 298px;
+    
+}
+.third .fa-square-caret-down{
+margin-left: 310px;
+}
+a .fa-facebook:hover, a .fa-x:hover, a .fa-youtube:hover, a .fa-instagram:hover{
+    color: rgba(0,0, 255, 0.5);
+    
+}
