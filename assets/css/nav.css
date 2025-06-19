@@ -69,3 +69,32 @@ a .fa-facebook:hover, a .fa-x:hover, a .fa-youtube:hover, a .fa-instagram:hover{
     color: rgba(0,0, 255, 0.5);
     
 }
+@media only screen and (min-width: 320px)and (max-width: 768px){
+    .first{
+        padding-right: 0px;
+        
+        
+    }
+    .fa-solid{
+        margin-left: 100px;
+    }
+    .fourth .fa-square-caret-down{
+        margin-left: 100px;
+    }
+    .third .fa-square-caret-down {
+        margin-left: 110px;
+    }
+    .fifth .fa-square-caret-down{
+        margin-left: 85px;
+    }
+    .x{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .x .fa-x{
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+}

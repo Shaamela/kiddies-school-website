@@ -213,12 +213,12 @@ ul li a:hover{
 .second {
     font-size:20px;
     font-family: "Nunito", "Roboto", serif;
-    font-weight: 700;
-    
-    
-    
-    
+    font-weight: 700;    
 }
+.second .awwal{
+    color: yellow;
+}
+
 .fa-pen-to-square{
     font-size: 25px;    
 }
@@ -349,9 +349,16 @@ ul li a:hover{
     border:10px solid #333;
     clip-path: ellipse(50% 60% at 50% 40%);
     margin-top: 20vh;
+    animation: wiggle 2s linear infinite alternate;
     
 
 }
+@keyframes wiggle{
+    0%{ transform: translate(0px) rotate(-10deg);}
+    50%{transform: translate(0px) rotate(0deg);}
+    100%{transform:translate(0px) rotate(10deg)}
+}
+
 .grid-two{
     grid-column: 3/5;
     grid-row:1/2;
@@ -360,7 +367,12 @@ ul li a:hover{
     line-height: 5px;
 
 }
-
+.grid-two p span{
+    font-size: 40px;
+}
+.grid-two .rem{
+    font-size: 40px;
+}
 
 .grid-two .wel{
     font-size: 15px;
@@ -393,8 +405,10 @@ ul li a:hover{
     margin-left: 75px;
     font-family: calibri;
     font-weight: 700;
+    
 
 }
+
 .grid-three p:nth-child(n+2){
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -409,9 +423,20 @@ ul li a:hover{
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px black;
     width:70%;
+    animation: animate-me 7s ease-in ;  
+    transition: 1s; 
+    
+}
+.grid-three div:hover{
+    width: 75%;
+}
+@keyframes animate-me {
+    from{ transform: translate(130px);}
+    to{ transform: translate(0px);}
     
     
 }
+
 .grid-four div{
     background: rgb(0, 0, 255,0.5);
     color:whitesmoke;
@@ -419,18 +444,29 @@ ul li a:hover{
     box-shadow: 2px 2px 2px 2px black;
     width:70%;
     margin-top: -30px;
+    animation: animate-us 7s  ease-in ;
+    transition: 1s;
     
 
 }
+.grid-four div:hover{
+    width: 75%;
+}
+@keyframes animate-us {
+    from{transform: translate(-190px);}
+    to{transform: translate(0px);}
+}
 .grid-four p:first-child{
-    font-size: 25px;
+    font-size: 27px;
     margin-top: -2px; 
     letter-spacing: 2px;
     margin-left: 75px;
     font-weight: 700;
     font-family: Calibri;
+    transition: 1s;
 
 }
+
 .grid-four p:nth-child(n+2){
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -459,7 +495,16 @@ ul li a:hover{
     box-shadow: 2px 3px 3px 2px black;
     display: block;
     margin-top: 30px;
+    transition: 1s;
+    
 
+
+    
+}
+.more:hover{
+    background: salmon;
+    padding: 15px 43px;
+    font-weight: 700;
     
 }
     
@@ -1395,7 +1440,7 @@ hr{
     color: #000000;
 }
 
-@media only screen and (max-width: 768px ){
+@media only screen and (min-width: 320px)and (max-width: 768px){
 
     body{
         margin: 0, auto;
@@ -1403,15 +1448,16 @@ hr{
     }
 
     .nav-1{
-        width: 91%;
+        width: 70%;
         gap:-10px;
         padding-top: 20px;
         padding-bottom: 20px;
+        height: 28px;
 
     } 
     .about{
         font-size: 20px;
-        margin-left: 5px;
+        
         
     }
     .fa-regular{
@@ -1422,7 +1468,7 @@ hr{
         background-image: none;
      }
      .more{
-        margin:20px 70px;
+        margin:20px 20px;
      }
 
      .language button, .coding button, .math button, .music button, .writing button{
@@ -1432,10 +1478,27 @@ hr{
      .grid-2-two:hover, .grid-2-three:hover, .grid-2-four:hover, .grid-2-five:hover{
         transform: none;
     }
+    .grid-four div, .grid-three div{
+    width: 66%;
+    }
+    .grid-four div:hover, .grid-three div:hover{
+        width: 66%;
+    }
+    .grid-four p:first-child,  .grid-three  p:first-child{
+        margin-left: 15px;
+    }
 
-
+    .grid-2-one p:nth-child(2){
+        font-size: 20px;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    .grid-2-one{
+        padding-bottom: 35px;
+    }
+    
 header{
-    background-image: url(/images/background.jpeg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     height:56vh;
@@ -1458,8 +1521,9 @@ header{
     
     margin: 30px auto;
     display: block;
-    width: 600px;
-    height: 600px;
+    width: 250px;
+    height: 350px;
+    margin-bottom: -50px;
     
     
 
@@ -1484,13 +1548,29 @@ header{
 
 .old div{
     margin: 0 auto;
+    
+    
 }
 .grid-two{
-    font-size: 40px;
-    width:500px;
-    margin: 0 auto;
+    font-size: 20px;
+    width:50%;
+    margin: 0 auto; 
     padding-top:0;
+    line-height: 20px;
     
+
+    
+    
+
+    
+}
+.grid-two p span{
+    font-size: 30px;
+    
+}
+.grid-two .rem{
+    margin-bottom: -10px;
+    font-size: 20px;
 }
 
  ul li a{
@@ -1516,14 +1596,26 @@ header{
 }
 .second{
     margin-left: auto;
-    margin-right: -150px;
-    font-size: 40px;
+    margin-right: -130px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    
+}
+.second .awwal{
+    margin-left: 60px;
+    margin-right: 5px;
+    font-family: "Nunito";
+    font-size: 30px;
 }
 
 .grid-2-one{
     display: block;
     margin-right: auto;
     margin-left: -100px;
+}
+
+.grid-2-one p:nth-child(n+3){
+    margin-left: 100px;
 }
 #content{
     display: block;
@@ -1535,37 +1627,55 @@ header{
 }
 .grid-2-two, .grid-2-three, .grid-2-four, .grid-2-five{
     height: 30vh;
-    margin-top: -120px;
     padding-bottom: 0;
-    padding-top: 0;
-    margin-left:20px;
+    margin-left:10px;
     width: 95%;
-    margin-top: -170px;
-    
-
-    
-
 }
 
 .grid-2-two p:first-child, .grid-2-three p:first-child, .grid-2-four p:first-child, .grid-2-five p:first-child {
     font-size: 40px;
-    padding-top: 100px;
-    padding-bottom: 0px;   
+    padding-top: 10px;
+    padding-bottom: 0px;  
+    margin-top: 30px; 
 }
 .section-six{
     height: 70vh;
+}
+.teacher p:nth-child(2){
+    line-height: 45px;
+    font-size: 30px;
+}
+.teacher p:nth-child(n+3){
+    line-height: 25px;
+    margin-bottom: 0;
+    margin-top: 0px;
 }
 .activities{
     display: block;
     
 }
 .cultural, .stories, .drawing, .kids{
-    height: 30vh;
+    height: 40vh;
+    margin-left: 8px;
+}
+.cultural, .kids{
+    animation: culture 7s  1s linear ;
+}
+.stories,.drawing{
+    animation: story 7s 1s linear;
+}
+@keyframes culture {
+    from{transform:translate(-100px);}
+    to{transform: translate(0);}
+}
+@keyframes story {
+    from{transform:translate(100px);}
+    to{transform: translate(0);}
 }
 .parent p:nth-child(2){
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .child-1, .child-2, .child-3{ 
@@ -1573,13 +1683,10 @@ margin-top: 30px;}
 
 .assess{
 
-    background-color: rgb(148, 0, 211, 0.699);
     border-radius: 20px;
-    width: 95%;
-    margin: 0 auto;
-    height: 30vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 2px 2px 2px 2px black;
+    width: 93%;
+    height: 40vh;
+    
 
 }
 .awesome{
@@ -1589,43 +1696,77 @@ margin-top: 30px;}
 }
 .yemail{
     
-    width:90%;
-    margin-left: 20px;
+    margin:0 auto;
+    width: 88%;
+    height: fit-content;
+    margin-top: 20px;
     
-    
+}
+.blog p:first-child {
+    font-size: 2rem;
 }
 .blog p:nth-child(2){
     margin-left: 10px;
-    font-weight: 700;
+    font-size: 1.5rem;
     
+}
+.blog p:nth-child(n+3){
+    width: 100%;
+    max-width: 95%;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom:0 ;
 }
 .cultural p:first-child, .stories p:first-child, .drawing p:first-child, .kids p:first-child{
-    padding-top: 80px;
+    padding-top: 10vh;
+    font-size: 15px;
+    font-weight: 400;
     text-align: left;
-    font-size:35px;
-    font-weight: 700;
     
 }
+
+
+
 .cultural span, .stories span, .drawing span, .kids span{
-        margin-left: -150px;
-        padding-top: 50px;
+        margin-left: -190px; 
+        padding-top: 10px;
+    
     }
 
 
     .stories p:nth-child(n+2), .cultural p:nth-child(n+2), .drawing p:nth-child(n+2), .kids p:nth-child(n+2){
-        font-size: 30px;
-        margin-top: -20px;
-        margin-right: -10px;
+        font-size: 20px;
+        margin-top: 50px;
+        
+        
 }
+
 #arrow-up{
     right:10px;
 }
 .parent p:nth-child(n+3){
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+    max-width: 90%;
+
+}
+.parent p:first-child{
+    padding-top: 10px;
 }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 .assess p:nth-child(n+3){
-    font-size: 25px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.assess :first-child{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.resources{
+    margin-top: -2px;
 }
 .resources h3 span:nth-child(2){
     font-size: 25px;
@@ -1646,10 +1787,21 @@ margin-top: 30px;}
     
 }
 footer{
-    height: 85vh;
+    height: 111vh;
+}
+.lips{
+    margin-top: 2rem;
 }
 .recent-post span{
     font-size: 22px;
+}
+.info h3, .program h3 {
+    padding-top: 30px;
+    margin-left: 10px;
+}
+.info ul, .program ul {
+    padding-left: 2px;
+    margin-top: -15px;
 }
 .video{
     font-size: 15px; 
@@ -1657,12 +1809,29 @@ footer{
     font-weight: 600;
     margin-left:-10px;
     white-space: pre;
-    
-    
-    
 
 }
- 
+.fa-pen-to-square{
+    font-size: 0px;
+}
+.fa-lightbulb{
+    margin-top: 0;
+
+}
+.fa-arrow-up{
+    position: absolute;
+    right: 100px;
+    top: -70px;
+}
+
+ p.wel{
+    margin-top: 0;
+    margin: 0;
+ }
+ .explorer p:nth-child(2){
+    font-size: 40px;
+ }
+
 
 }
 
